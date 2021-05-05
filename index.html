@@ -1,108 +1,17 @@
-<!DOCTYPE html>
-<html lang="es">
-    <head>
-        <title>Mi blog de animales de granja</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="widh=device-width, user-scalable=no, initial-scale=1, minimum-scale=1">    
-       <link rel="stylesheet" href="css/fontello.css">
-       <link rel="stylesheet" href="css/estilo.css">
-       <link rel="stylesheet" href="css/menu.css">
-       <link rel="stylesheet" href="css/banner.css">
-       <link rel="stylesheet" href="css/blog.css">
-       <link rel="stylesheet" href="css/info.css">
-       <link rel="stylesheet" href="'https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap">
-       <link rel="stylesheet" href="css/contacto.css">
-              <link rel="stylesheet" href="css/contacto.css">
-
-    </head>
-
-     <body>
-        <header>
-            <div class="contenedor">
-                <h1>Animales de granja</h1>
-                <input type="checkbox" id="menu-bar">
-                <label class="icon-menu" for="menu-bar"></label>
-                <nav class="menu">
-                  <a href="file:///C:/Users/CarlaAsunci%C3%B3nPozuelo/Desktop/blog/index.html">Inicio</a>
-                  <a href="file:///C:/Users/CarlaAsunci%C3%B3nPozuelo/Desktop/blog/nuestrosanimales.html">Nuestros animales</a>
-                  <a href="file:///C:/Users/CarlaAsunci%C3%B3nPozuelo/Desktop/blog/bienestaranimal.html">Bienestar animal</a>
-                  <a href="file:///C:/Users/CarlaAsunci%C3%B3nPozuelo/Desktop/blog/blog.html">Blog</a>
-                  <a href="file:///C:/Users/CarlaAsunci%C3%B3nPozuelo/Desktop/blog/contacto.html">Contacto</a>
-                </nav>
-            </header>
-
-
-
-
-
-
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <title>Formulario de contacto</title>
-  
-  </head>
-
-
-<body>  
-  
-
-
-  <div class="contact_form">
-
-    <div class="formulario">      
-      <h1>Formulario de contacto</h1>
-        <h3>Escribeme y me pondre en contacto contigo :)</h3>
-
-
-          <form action="submeter-formulario.php" method="post">       
-
-            
-                <p>
-                  <label for="nombre" class="colocar_nombre">Nombre
-                    <span class="obligatorio">*</span>
-                  </label>
-                    <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
-                </p>
-              
-                <p>
-                  <label for="email" class="colocar_email">Email
-                    <span class="obligatorio">*</span>
-                  </label>
-                    <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
-                </p>
-            
-                <p>
-                  <label for="telefone" class="colocar_telefono">Teléfono
-                  </label>
-                    <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
-                </p>    
-              
-               
-              
-                <p>
-                  <label for="asunto" class="colocar_asunto">Asunto
-                    <span class="obligatorio">*</span>
-                  </label>
-                    <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
-                </p>    
-              
-                <p>
-                  <label for="mensaje" class="colocar_mensaje">Mensaje
-                    <span class="obligatorio">*</span>
-                  </label>                     
-                                    <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
-                                </p>                    
-              
-                <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
-
-                <p class="aviso">
-                  <span class="obligatorio"> * </span>los campos son obligatorios.
-                </p>          
-            
-          </form>
-    </div>  
-  </div>
-
-</body>
-</html>
+<form name="contact" method="POST" data-netlify="true">
+  <p>
+    <label>Tu nombre: <input type="text" name="name" /></label>   
+  </p>
+  <p>
+    <label>Tu correo: <input type="email" name="email" /></label>
+  </p>
+  <p>
+   
+  </p>
+  <p>
+    <label>Message: <textarea name="message"></textarea></label>
+  </p>
+  <p>
+    <button type="submit">Send</button>
+  </p>
+</form>
